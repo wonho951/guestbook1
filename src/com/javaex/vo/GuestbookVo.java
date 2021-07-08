@@ -1,6 +1,6 @@
 package com.javaex.vo;
 
-public class BookVo {
+public class GuestbookVo {
 	
 	//필드
 	private int no;
@@ -10,11 +10,11 @@ public class BookVo {
 	private String regDate;
 	
 	//생성자
-	public BookVo() {
+	public GuestbookVo() {
 		super();
 	}
 	
-	public BookVo(int no, String name, String password, String content, String regDate) {
+	public GuestbookVo(int no, String name, String password, String content, String regDate) {
 		super();
 		this.no = no;
 		this.name = name;
@@ -54,14 +54,15 @@ public class BookVo {
 	public void setRegDate(String regDate) {
 		this.regDate = regDate;
 	}
+
+
 	
 	//메소드-일반
+	
 	@Override
 	public String toString() {
-		return "BookVo [no=" + no + ", name=" + name + ", password=" + password + ", content=" + content + ", regDate="
-				+ regDate + "]";
+		return "GuestbookVo [no=" + no + ", name=" + name + ", password=" + password + ", content=" + content
+				+ ", regDate=" + regDate + "]";
 	}
-	
-	
 
 }
