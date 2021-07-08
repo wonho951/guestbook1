@@ -55,6 +55,7 @@ public class GuestbookDao {
 		}
 	}
 
+	/*
 	//방명록 등록
 	public int guestInsert(GuestbookVo bookVo) {
 		int count = 0;
@@ -86,7 +87,7 @@ public class GuestbookDao {
 		return count;
 	}
 
-	
+	*/
 	
 	
 	// 사람 리스트(검색안할때)
@@ -109,7 +110,7 @@ public class GuestbookDao {
 			query += "         password, ";
 			query += "         content, ";
 			query += "         reg_date ";
-			query += " from guestbook;";
+			query += " from guestbook ";
 
 			if (keword != "" || keword == null) {
 				query += " where name like ? ";
@@ -134,8 +135,8 @@ public class GuestbookDao {
 				String content = rs.getString("content");
 				String regDate = rs.getString("reg_date");
 
-				GuestbookVo personVo = new GuestbookVo(no, name, password, content, regDate);
-				personList.add(personVo);
+				GuestbookVo gusetVo = new GuestbookVo(no, name, password, content, regDate);
+				guestList.add(gusetVo);
 			}
 
 		} catch (SQLException e) {
@@ -144,10 +145,17 @@ public class GuestbookDao {
 
 		close();
 
-		return personList;
+		return guestList;
 
 	}
 
+	
+	
+	
+	
+	
+	
+	/*
 	// 사람 수정
 	public int personUpdate(PersonVo personVo) {
 		int count = 0;
@@ -209,4 +217,6 @@ public class GuestbookDao {
 		close();
 		return count;
 	}
+	
+	*/
 }
