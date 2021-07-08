@@ -23,6 +23,16 @@ public class GuestbookVo {
 		this.regDate = regDate;
 	}
 	
+	
+
+	public GuestbookVo(String name, String password, String content) {
+		super();
+		this.name = name;
+		this.password = password;
+		this.content = content;
+	}
+	
+	
 	//메소드 g/s
 	public int getNo() {
 		return no;
@@ -64,5 +74,12 @@ public class GuestbookVo {
 		return "GuestbookVo [no=" + no + ", name=" + name + ", password=" + password + ", content=" + content
 				+ ", regDate=" + regDate + "]";
 	}
+
+	
+	
+	
+	
+	
+	
 
 }

@@ -10,7 +10,7 @@
 
 <%
 	GuestbookDao guestBookDao = new GuestbookDao();
-	List<GuestbookVo> guestList = guestBookDao.getguestList("");
+	List<GuestbookVo> guestList = guestBookDao.getguestList();
 	//System.out.println(guestList.toString());
 	
 %>
@@ -23,7 +23,7 @@
 <title>List</title>
 </head>
 <body>
-	<form action = "./list.jsp" method = "get">
+	<form action = "./add.jsp" method = "get">
 		<table border = "1">
 			<tr>
 				<td>이름</td>
@@ -33,7 +33,7 @@
 			</tr>
 		
 			<tr>
-				<td colspan = "5"><textarea name = "contene"></textarea></td>
+				<td colspan = "5"><textarea name = "content"></textarea></td>
 			</tr>
 			
 			<tr>
@@ -48,7 +48,8 @@
 		<tr>
 			<td><%= guestList.get(i).getNo() %></td>
 			<td><%= guestList.get(i).getName() %></td>
-			<td><%= guestList.get(i).getRegDate() %></td>		
+			<td><%= guestList.get(i).getRegDate() %></td>	
+			<td><a href="./deleteForm.jsp">삭제</a></td>
 		</tr>
 	
 		<tr>
