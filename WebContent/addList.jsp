@@ -20,7 +20,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>List</title>
+<title>GuestBook-addList</title>
 </head>
 <body>
 	<form action = "./add.jsp" method = "get">

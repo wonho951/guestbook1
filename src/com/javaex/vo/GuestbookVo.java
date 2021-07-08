@@ -14,6 +14,11 @@ public class GuestbookVo {
 		super();
 	}
 	
+	public GuestbookVo(String password) {
+		super();
+		this.password = password;
+	}
+	
 	public GuestbookVo(int no, String name, String password, String content, String regDate) {
 		super();
 		this.no = no;
@@ -33,6 +38,8 @@ public class GuestbookVo {
 	}
 	
 	
+
+
 	//메소드 g/s
 	public int getNo() {
 		return no;

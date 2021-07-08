@@ -118,7 +118,7 @@ public class GuestbookDao {
 
 			pstmt.setString(1, gusetVo.getName()); // ?(물음표) 중 1번째, 순서중요
 			pstmt.setString(2, gusetVo.getPassword()); // ?(물음표) 중 2번째, 순서중요
-			pstmt.setString(3, gusetVo.getRegDate()); // ?(물음표) 중 3번째, 순서중요
+			pstmt.setString(3, gusetVo.getContent()); // ?(물음표) 중 3번째, 순서중요
 
 			count = pstmt.executeUpdate(); // 쿼리문 실행
 
