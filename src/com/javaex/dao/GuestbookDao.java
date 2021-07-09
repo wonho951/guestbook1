@@ -162,5 +162,8 @@ public class GuestbookDao {
 		return count;
 	}
 	
+	//변수명 사용시 같은 이름 사용도 할 수 있고, 그게 가장 좋은 방법이면 사용하는게 좋다.
+	
+	
 
 }

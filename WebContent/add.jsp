@@ -20,7 +20,7 @@
 	
 	guestDao.guestInsert(guestVo);
 	
-	response.sendRedirect("./addList.jsp");
+	response.sendRedirect("./addList.jsp");	//리다이렉트 시키면 이 밑에 html필요없음 지워도 됨.
 %>
 
 <!DOCTYPE html>
