@@ -21,7 +21,7 @@
 </head>
 <body>
 
-	<form action="./delete.jsp" method="get">
+	<form action="./delete.jsp" method="post">	<!--  숨겨야 하니 post로 바꿈 확인시에는 get-->
 		비밀번호:<input type="password" name="password"> 
 		<button type="submit">확인</button>
 		<input type="hidden" name = "no" value="<%=guest  %>">

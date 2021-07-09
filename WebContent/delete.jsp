@@ -8,7 +8,7 @@
 
 <%
 	request.setCharacterEncoding("UTF-8");
-GuestbookDao GuestDao = new GuestbookDao();	//여러번 사용할 수도 있으니 위에서 선언
+	GuestbookDao GuestDao = new GuestbookDao();	//여러번 사용할 수도 있으니 위에서 선언
 	
 	
 	int no = Integer.parseInt(request.getParameter("no"));

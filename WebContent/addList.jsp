@@ -23,7 +23,7 @@
 <title>GuestBook-addList</title>
 </head>
 <body>
-	<form action = "./add.jsp" method = "get">
+	<form action = "./add.jsp" method = "post">	<!--  숨겨야 하니 post로 바꿈 확인시에는 get-->
 		<table border = "1">
 			<tr>
 				<td>이름</td>
