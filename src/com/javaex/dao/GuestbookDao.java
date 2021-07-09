@@ -76,6 +76,7 @@ public class GuestbookDao {
 			query += "         content, ";
 			query += "         reg_date ";
 			query += " from guestbook ";
+			query += " order by no asc ";
 			
 			pstmt = conn.prepareStatement(query);
 			rs = pstmt.executeQuery();
