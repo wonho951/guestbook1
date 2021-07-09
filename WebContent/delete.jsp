@@ -25,14 +25,4 @@
 	
 	response.sendRedirect("./addList.jsp");
 %>    
-
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
-</head>
-<body>
-
-</body>
-</html>
+<!-- 밑에 html문은 필요없으니 과감하게 지워도 됨. -->
