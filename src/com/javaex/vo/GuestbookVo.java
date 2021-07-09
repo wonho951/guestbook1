@@ -19,6 +19,20 @@ public class GuestbookVo {
 		this.password = password;
 	}
 	
+	public GuestbookVo(int no, String password) {
+		super();
+		this.no = no;
+		this.password = password;
+	}
+
+	
+	public GuestbookVo(String name, String password, String content) {
+		super();
+		this.name = name;
+		this.password = password;
+		this.content = content;
+	}
+	
 	public GuestbookVo(int no, String name, String password, String content, String regDate) {
 		super();
 		this.no = no;
@@ -27,17 +41,6 @@ public class GuestbookVo {
 		this.content = content;
 		this.regDate = regDate;
 	}
-	
-	
-
-	public GuestbookVo(String name, String password, String content) {
-		super();
-		this.name = name;
-		this.password = password;
-		this.content = content;
-	}
-	
-	
 
 
 	//메소드 g/s

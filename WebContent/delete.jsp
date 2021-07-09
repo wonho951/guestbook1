@@ -8,7 +8,21 @@
 
 <%
 	request.setCharacterEncoding("UTF-8");
-	GuestbookDao GuestDao = new GuestbookDao();	//여러번 사용할 수도 있으니 위에서 선언
+GuestbookDao GuestDao = new GuestbookDao();	//여러번 사용할 수도 있으니 위에서 선언
+	
+	
+	int no = Integer.parseInt(request.getParameter("no"));
+	String pw = request.getParameter("password");
+	
+	System.out.println(no);
+	GuestbookVo guestVo = new GuestbookVo(no,pw);
+	
+	GuestDao.guestDelete(guestVo);
+	
+	
+	
+		
+	
 	response.sendRedirect("./addList.jsp");
 	//삭제하기는 대체 어찌해야합니까...
 %>    
