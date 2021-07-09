@@ -24,7 +24,6 @@ GuestbookDao GuestDao = new GuestbookDao();	//여러번 사용할 수도 있으�
 		
 	
 	response.sendRedirect("./addList.jsp");
-	//삭제하기는 대체 어찌해야합니까...
 %>    
 
 <!DOCTYPE html>

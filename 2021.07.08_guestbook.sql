@@ -36,7 +36,8 @@ commit;
 
 
 delete from guestbook
-where no = 5;
+where no = 1
+and password = 234;
 
 
 select  *
@@ -50,3 +51,11 @@ select  no,
 from guestbook;
 
 
+
+select  no,
+        name,
+        password,
+        content,
+        reg_date
+from guestbook
+where password = '123';
