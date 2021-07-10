@@ -165,5 +165,38 @@ public class GuestbookDao {
 	//변수명 사용시 같은 이름 사용도 할 수 있고, 그게 가장 좋은 방법이면 사용하는게 좋다.
 	
 	
+	
+	
+	//삭제하기 안좋은법(no하나만 가져와서 지울때)
+	public int guestDelete(int no) {
+
+		int count = -1;
+
+		getConnection();
+
+		try {
+			// 3. SQL문 준비 / 바인딩 / 실행
+			String query = "";
+			query += " DELETE FROM guestbook ";
+			query += " WHERE guestbook_id = ? ";
+
+			pstmt = conn.prepareStatement(query);
+
+			pstmt.setInt(1, no);
+
+			count = pstmt.executeUpdate();
+
+			// 4.결과처리
+
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+
+		close();
+
+		return count;
+
+	}
+	
 
 }

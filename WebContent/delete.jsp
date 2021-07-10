@@ -24,5 +24,8 @@
 		
 	
 	response.sendRedirect("./addList.jsp");
-%>    
+
+	
+%>  
+  
 <!-- 밑에 html문은 필요없으니 과감하게 지워도 됨. -->
