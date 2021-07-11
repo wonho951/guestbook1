@@ -49,7 +49,7 @@
 			<td><%= guestList.get(i).getNo() %></td>
 			<td><%= guestList.get(i).getName() %></td>
 			<td><%= guestList.get(i).getRegDate() %></td>	
-			<td><a href="./deleteForm.jsp?no=<%= guestList.get(i).getNo()%>">삭제</a></td>
+			<td><a href="./deleteForm.jsp?no=<%= guestList.get(i).getNo()%>">삭제</a></td>	<!-- 비밀번호 유출시킬 문제가 아닌이상 no만 해준다. -->
 		</tr>
 	
 		<tr>
